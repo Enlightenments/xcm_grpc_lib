@@ -6,6 +6,7 @@ description = "xcm grpc lib"
 license = "Apache-2.0"
 homepage = "https://github.com/Enlightenments/xcm_grpc_lib"
 repository = "https://github.com/Enlightenments/xcm_grpc_lib"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
