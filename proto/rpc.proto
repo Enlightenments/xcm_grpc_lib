@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package rpc;
+
+service Rpc {
+  rpc JsonRpc (RpcRequest) returns (RpcResponse) {}
+  rpc SocketRpc(stream RpcRequest) returns (stream RpcResponse) {}
+
+}
+
+message RpcRequest {
+  string id = 1;
+  string method = 2;
+  string params = 3;
+}
+
+message RpcResponse{
+  string id = 1;
+  string method = 2;
+  string data = 3;
+}
+

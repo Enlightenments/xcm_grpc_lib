@@ -10,3 +10,13 @@ repository = "https://github.com/Enlightenments/xcm_grpc_lib"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+async-stream = "0.3"
+tonic = "0.6" # Rust gRPC implementation
+prost = "0.9" # Rust Protocol Buffers implementation
+prost-types = "0.9" # Contains definitions of Protocol Buffers well-known types
+tokio = { version = "1", features = ["full"] }
+tokio-stream = { version = "0.1", features = ["net"] }
+futures = "0.3"
+
+[build-dependencies]
+tonic-build = "0.6"
